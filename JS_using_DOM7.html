@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>DOM Date and Time Example</title> 
+<style> 
+body{ 
+background-color: lightblue; 
+text-align: center; 
+font-family: Arial; 
+} 
+.container{ 
+background-color: white; 
+width: 400px; 
+margin: auto; 
+padding: 30px; 
+margin-top: 100px; 
+border-radius: 10px; 
+} 
+button{ 
+background-color: rgb(47, 225, 47); 
+color: rgb(9, 0, 0); 
+padding: 10px 20px; 
+font-size: 16px; 
+border: none; 
+border-radius: 5px; 
+} 
+button:hover{ 
+background-color: rgb(4, 159, 89); 
+} 
+#demo{ 
+margin-top: 20px; 
+font-size: 18px; 
+color: rgb(245, 77, 243); 
+} 
+</style> 
+</head> 
+<body> 
+<div class="container"> 
+<h2>Display Current Date and Time</h2> 
+<button onclick="displayDateTime()">Show Date and Time</button> 
+<p id="demo"></p> 
+</div> 
+<script> 
+function displayDateTime() 
+{ 
+var currentDate = new Date(); 
+document.getElementById("demo").innerHTML = 
+"Current Date and Time is: " + currentDate; 
+} 
+</script> 
+</body> 
+</html>
